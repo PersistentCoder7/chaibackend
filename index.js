@@ -27,4 +27,8 @@ app.get("/youtube", (req, res) => {
   res.send("<h2>Youtube</h2>");
 });
 
+app.get("/new", (req, res) => {
+  res.json({ message: "Hello, World!" }).end();
+});
+
 app.listen(port, () => console.log(`listening on http://localhost:${port}`));
